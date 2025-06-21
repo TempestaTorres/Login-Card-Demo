@@ -1,0 +1,80 @@
+html {
+    scroll-behavior: smooth;
+}
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+button, input, textarea, select {
+    background: none;
+    border: none;
+    outline: none;
+    color: inherit;
+    font-family: inherit;
+    font-feature-settings: inherit;
+    font-variation-settings: inherit;
+    font-size: 100%;
+    font-weight: inherit;
+    line-height: inherit;
+    letter-spacing: inherit;
+}
+button {
+    cursor: pointer;
+}
+ul, ol {
+    display: flex;
+    list-style: none;
+}
+a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+svg {
+    display: block;
+    pointer-events: none;
+    height: auto;
+    width: auto;
+}
+img,
+video {
+    height: auto;
+    max-width: 100%;
+}
+img {
+    object-fit: cover;
+}
+
+iframe {
+    border: 0;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+td,
+th {
+    padding: 0;
+}
+td:not([align]),
+th:not([align]) {
+    text-align: inherit;
+}
+article,
+aside,
+figure,
+footer,
+header,
+hgroup,
+section {
+    display: block;
+}
+input[type=checkbox],
+input[type=radio] {
+    vertical-align: baseline;
+}
