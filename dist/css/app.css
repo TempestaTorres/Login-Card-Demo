@@ -1,0 +1,110 @@
+body {
+    background-color: var(--body-background);
+    line-height: var(--line-height-base);
+    color: var(--body-color);
+    font-family: var(--font-family-base), 'sans-serif';
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-base);
+    font-feature-settings: "ss01" on;
+    text-rendering: optimizeSpeed;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+#header {
+    background-color: #fff;
+}
+.wrap-header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.button-flat {
+    padding: 0.5rem 1rem;
+}
+.logo-flag {
+    --logo-color: rgb(83 141 215);
+    --logo-hover-color: #fab005;
+    display: inline-block;
+    fill: var(--logo-color);
+    transition-property: fill;
+    transition-timing-function: ease-in-out;
+}
+.logo-flag svg {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    font-size: 1.25em;
+    line-height: .05em;
+    vertical-align: -0.2em;
+}
+.logo-flag:hover svg {
+    fill: var(--logo-hover-color);
+}
+.headset {
+    --headset-color: rgb(20, 110, 190);
+    display: inline-block;
+    fill: var(--headset-color);
+    transition-property: fill;
+    transition-timing-function: ease-in-out;
+}
+.headset svg {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    font-size: 1.5em;
+    line-height: .04167em;
+    vertical-align: -0.25em;
+}
+[aria-label][data-balloon] {
+    position: relative;
+    cursor: pointer;
+}
+[data-balloon="left"]::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    right: 100%;
+    border: 5px solid transparent;
+    border-left-color: rgb(24 49 83);
+    transform: translate(0);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.18s ease-out 0.18s;
+    z-index: 10;
+}
+[data-balloon="left"]::after {
+    content: attr(aria-label);
+    position: absolute;
+    margin-right: 10px;
+    right: 100%;
+    transform: translate(0);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.18s ease-out 0.18s;
+    text-indent: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    text-shadow: none;
+    font-size: 12px;
+    background: rgb(24 49 83);
+    border-radius: 2px;
+    color: #fff;
+    padding: .5em 1em;
+    white-space: nowrap;
+    z-index: 10;
+}
+[aria-label][data-balloon]:hover::before {
+    opacity: 1;
+    transform: translateX(-4px);
+}
+[aria-label][data-balloon]:hover::after {
+    opacity: 1;
+    transform: translateX(-4px);
+}
+/* Main */
+.app-content {
+    padding: 5em 0 5em 0;
+}

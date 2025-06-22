@@ -1,0 +1,66 @@
+:root {
+    --font-family-base: cera-round-pro, "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    --font-size-base: 1rem;
+    --font-weight-base: normal;
+    --body-background: rgb(240 241 243);
+    --body-color: rgb(24 49 83);
+    --line-height-base: 1.5rem;
+    --laptop-grid-max-width: 72rem;
+    --tablet-grid-max-width: 48rem;
+    --desktop-grid-max-width: var(--laptop-grid-max-width);
+    --timing-2xfast: calc(1s * 0.1);
+}
+
+.app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.app-content {
+    flex: 1 0 auto;
+}
+.app-header {
+    flex-shrink: 0;
+}
+.inner-container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    width: 72rem;
+}
+.margin-auto {
+    margin-right: auto;
+    margin-left: auto;
+}
+.line-length-sm {
+    max-width: 45ch;
+}
+.padding-y-md {
+    padding-top: calc(1em * 1) !important;
+    padding-bottom: calc(1em * 1) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        transition-duration: 0.2s !important;
+        animation-duration: 0.2s !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+    }
+}
+@media (min-width: 1536px) {
+    .inner-container {
+        --max-width: var(--desktop-grid-max-width);
+    }
+}
+@media (min-width: 1152px) {
+    .inner-container {
+        --max-width: var(--laptop-grid-max-width);
+    }
+}
+@media (min-width: 768px) {
+    .inner-container {
+        --max-width: var(--tablet-grid-max-width);
+    }
+}
