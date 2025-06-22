@@ -34,7 +34,7 @@
     margin-left: auto;
 }
 .line-length-sm {
-    max-width: 45ch;
+    max-width: 50ch;
 }
 .padding-y-md {
     padding-top: calc(1em * 1) !important;

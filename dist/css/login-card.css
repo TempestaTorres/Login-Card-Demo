@@ -1,3 +1,58 @@
+:root {
+    --card-margin-bottom: calc(1em * 2);
+    --card-border-width: 0;
+    --card-border-style: solid;
+    --card-border-color: #fff;
+    --card-border-radius: 0.75em;
+    --card-background: #fff;
+    --card-vertical-padding: 1.75rem;
+    --card-horizontal-padding: 2rem;
+    --card-min-height: 5em;
+    --card-color:  rgb(24, 49, 83);
+}
 .card {
-
+    position: relative;
+    margin-bottom: var(--card-margin-bottom);
+    outline: none;
+    border: var(--card-border-width) var(--card-border-style) var(--card-border-color);
+    border-radius: var(--card-border-radius);
+    background: var(--card-background);
+    padding: var(--card-vertical-padding) var(--card-horizontal-padding);
+    min-height: var(--card-min-height);
+    text-align: center;
+    color: var(--card-color);
+}
+.card:is(.default) {
+    --card-border-color: rgb(165, 171, 187);
+}
+.card-header {
+    margin-top: calc(-1 * var(--card-vertical-padding));
+    margin-right: calc(-1 * var(--card-horizontal-padding));
+    margin-left: calc(-1 * var(--card-horizontal-padding));
+    padding: var(--card-vertical-padding) var(--card-horizontal-padding);
+}
+.card-header__subtitle {
+    display: block;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 0.25em;
+    color: #fab005;
+    margin-bottom: 1.25rem;
+}
+.face-grin {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    font-size: 4em;
+    vertical-align: -0.125em;
+    margin: 0 auto;
+}
+.color-secondary {
+    fill: #fab005;
+}
+.card-title {
+    margin: 1rem 0;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 38px;
 }
