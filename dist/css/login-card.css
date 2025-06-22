@@ -9,6 +9,7 @@
     --card-horizontal-padding: 2rem;
     --card-min-height: 5em;
     --card-color:  rgb(24, 49, 83);
+    --card-link-color: rgb(20, 110, 190);
 }
 .card {
     position: relative;
@@ -25,7 +26,7 @@
 .card:is(.default) {
     --card-border-color: rgb(165, 171, 187);
 }
-.card-header {
+.card-header, .section {
     margin-top: calc(-1 * var(--card-vertical-padding));
     margin-right: calc(-1 * var(--card-horizontal-padding));
     margin-left: calc(-1 * var(--card-horizontal-padding));
@@ -55,4 +56,98 @@
     font-weight: 600;
     font-size: 32px;
     line-height: 38px;
+}
+.card-section {
+    padding-top: 1rem;
+    color: var(--card-color);
+}
+.card-control {
+    text-align: left;
+    margin-bottom: 1.25rem;
+}
+.label {
+    display: block;
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: 0.75rem;
+    margin-bottom: 0.5rem;
+}
+.label-left {
+    margin-left: calc(1em * 6 / 16);
+}
+.with-icon {
+    position: relative;
+}
+svg[data-icon="envelope"], svg[data-icon="lock"] {
+    width: 25px;
+    height: 20px;
+    position: absolute;
+    top: 22px;
+    left: 24px;
+}
+svg[data-icon="right-to-bracket"] {
+    width: 25px;
+    height: 20px;
+    vertical-align: -0.25rem;
+}
+.svg-inline {
+    display: inline-block;
+}
+.input, button[type="submit"] {
+    width: 100%;
+    font-size: 1em;
+    font-weight: bold;
+    border-width: 0.125em;
+    border-style: solid;
+    border-color: rgb(97, 109, 138);
+    border-radius: 0.75em;
+}
+.input.has-icon {
+    padding: 18px 24px 18px 55px;
+}
+input::placeholder {
+    font-weight: 300;
+}
+button[type="submit"] {
+    position: relative;
+    margin-top: calc(1em * 1.5);
+    padding: 0.938rem 1.5rem;
+    background-color: #ffd43b;
+    font-weight: 600;
+    box-shadow: rgb(24, 49, 83) 0 6px 0 0;
+}
+:is(.accent) {
+  --button_hover-bg: #fab005;
+}
+button[type="submit"]:hover {
+    background-color: var(--button_hover-bg);
+}
+.span-icon {
+    margin-left: calc(1em * 8 / 16);
+}
+.card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: calc(1em * 1.5);
+}
+.check-box {
+    padding-right: calc(1em * 1.5);
+    font-size: 1em;
+    font-weight: 400;
+}
+.forgot-psw {
+    padding-left: calc(1em * 1.5);
+    font-size: 1em;
+    font-weight: 400;
+}
+.card-link {
+    display: inline-block;
+    color: var(--card-link-color);
+    text-decoration-color: rgb(20, 110, 190);
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+}
+.text-center {
+    text-align: center;
 }

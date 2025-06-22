@@ -107,4 +107,43 @@ body {
 /* Main */
 .app-content {
     padding: 5em 0 5em 0;
+    background-image: url("https://fontawesome.com/images/icons-gray-bg.svg");
+}
+.app-footer {
+    --link-color: #fff;
+    --link-hover-color: #74c0fc;
+    padding: 2rem 0;
+    color: var(--link-color);
+    background-color: rgb(24 49 83);
+}
+.footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.h5 {
+    font-size: var(--font-size-base);
+    line-height: 18px;
+    font-weight: 600;
+}
+.footer-links {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+.list-links {
+    display: flex;
+    align-items: center;
+    gap: calc(1em * 12 / 16);
+}
+.links-item {
+    padding-right: calc(1em * 6 / 16);;
+}
+.links-item:hover {
+    color: var(--link-hover-color);
+}
+.copyright {
+    color: rgb(195 198 209);
+    font-size: 0.875rem;
+    font-weight: 400;
 }

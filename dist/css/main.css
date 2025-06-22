@@ -19,7 +19,7 @@
 .app-content {
     flex: 1 0 auto;
 }
-.app-header {
+.app-header, .app-footer {
     flex-shrink: 0;
 }
 .inner-container {
@@ -27,7 +27,7 @@
     margin-left: auto;
     padding-right: 2rem;
     padding-left: 2rem;
-    width: 72rem;
+    /*width: 72rem;*/
 }
 .margin-auto {
     margin-right: auto;

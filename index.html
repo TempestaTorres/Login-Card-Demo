@@ -50,13 +50,86 @@
                             </g>
                         </svg>
                         <h1 class="card-title">Sign In to Your Account</h1>
-                        <p>Let's get you signed in and straight to the icons.</p>
+                        <p>Let's get you signed in and straight to the business.</p>
                     </div>
                     <!--   Card Body   -->
+                    <div class="section card-section">
+                        <form id="form" novalidate>
+                            <div class="card-control">
+                                <label for="email_address" class="label">Email Address</label>
+                                <div class="with-icon">
+                                    <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="envelope"
+                                         role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                                         class="svg-inline">
+                                        <path fill="currentColor"
+                                              d="M64 112c-8.8 0-16 7.2-16 16l0 22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1l0-22.1c0-8.8-7.2-16-16-16L64 112zM48 212.2L48 384c0 8.8 7.2 16 16 16l384 0c8.8 0 16-7.2 16-16l0-171.8L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64l384 0c35.3 0 64 28.7 64 64l0 256c0 35.3-28.7 64-64 64L64 448c-35.3 0-64-28.7-64-64L0 128z"
+                                              class=""></path>
+                                    </svg>
+                                    <input class="input has-icon" id="email_address" autofocus="autofocus"
+                                           name="email_address" placeholder="e.g. tchalla@wakanda.gov"
+                                           required="required" type="email" autocomplete="username email">
+                                </div>
+                            </div>
+                            <div class="card-control">
+                                <label for="password" class="label">Password</label>
+                                <div class="with-icon">
+                                    <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="lock"
+                                         role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+                                         class="svg-inline lock">
+                                        <path fill="currentColor"
+                                              d="M144 128l0 64 160 0 0-64c0-44.2-35.8-80-80-80s-80 35.8-80 80zM96 192l0-64C96 57.3 153.3 0 224 0s128 57.3 128 128l0 64 32 0c35.3 0 64 28.7 64 64l0 192c0 35.3-28.7 64-64 64L64 512c-35.3 0-64-28.7-64-64L0 256c0-35.3 28.7-64 64-64l32 0zM48 256l0 192c0 8.8 7.2 16 16 16l320 0c8.8 0 16-7.2 16-16l0-192c0-8.8-7.2-16-16-16L64 240c-8.8 0-16 7.2-16 16z"
+                                              class=""></path>
+                                    </svg>
+                                    <input class="input has-icon" id="password" name="password" required="required"
+                                           type="password" autocomplete="current-password">
+                                </div>
+                            </div>
+                            <button class="accent" type="submit">Sign In
+                                <span class="span-icon">
+                                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="right-to-bracket"
+                                     role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                                     class="svg-inline right-to-bracket"><path fill="currentColor"
+                                                                                                  d="M217.9 105.9L340.7 228.7c7.2 7.2 11.3 17.1 11.3 27.3s-4.1 20.1-11.3 27.3L217.9 406.1c-6.4 6.4-15 9.9-24 9.9c-18.7 0-33.9-15.2-33.9-33.9l0-62.1L32 320c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l128 0 0-62.1c0-18.7 15.2-33.9 33.9-33.9c9 0 17.6 3.6 24 9.9zM352 416l64 0c17.7 0 32-14.3 32-32l0-256c0-17.7-14.3-32-32-32l-64 0c-17.7 0-32-14.3-32-32s14.3-32 32-32l64 0c53 0 96 43 96 96l0 256c0 53-43 96-96 96l-64 0c-17.7 0-32-14.3-32-32s14.3-32 32-32z"
+                                                                                                  class=""></path></svg>
+                            </span></button>
+                        </form>
+                    </div>
+                    <!--  Card Footer   -->
+                    <div class="card-footer">
+                       <div class="check-box">
+                           <input id="sign-in-remember-me" type="checkbox" checked>
+                           <label class="label-left" for="sign-in-remember-me">Remember me</label>
+                       </div>
+                        <div class="forgot-psw">
+                            <a href="#" class="card-link">Forgot your password?</a>
+                        </div>
+                    </div>
                 </article>
+                <p class="text-center">
+                    Don't have an account?
+                    <a href="#" class="card-link">Sign up and get started!</a>
+                </p>
             </div>
         </div>
     </main>
+    <footer class="app-footer">
+        <div class="inner-container">
+            <div class="footer-container">
+                <div>
+                    <h5 class="h5">Go Make Something Awesome</h5>
+                </div>
+                <div class="footer-links">
+                    <div class="list-links">
+                        <a href="#" class="links-item">License</a>
+                        <a href="#" class="links-item">Terms of Service</a>
+                        <a href="#" class="links-item">Privacy Policy</a>
+                        <button id="cookie" class="links-item">Cookie Preferences</button>
+                    </div>
+                    <p class="copyright">© Tempesta Torres, Inc.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 </div>
 </body>
 </html>
